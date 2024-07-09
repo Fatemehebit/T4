@@ -438,12 +438,7 @@ body{
     color: #FFFFFF;
 }
 
-.sessions ul li:nth-child(2){
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0px 25px 32px 9px rgba(60, 85, 122, 0.06);
-}
-
-.sessions ul li:nth-child(3){
+.sessions ul li::hover{
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0px 4px 25px 17px rgba(57, 63, 71, 0.07);
     border: 1px solid #FFFFFF;
