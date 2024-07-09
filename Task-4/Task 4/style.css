@@ -171,7 +171,7 @@ body{
     padding-bottom: 1rem;
 }
 
-.card:nth-child(2){
+.card:nth-child(2):hover{
     transform: scale(109.301%, 107.338%);
     /* width: 282px;
     height: 395px;
