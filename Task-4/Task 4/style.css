@@ -180,6 +180,15 @@ body{
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
+.img-card{
+    position: absolute;
+    z-index: 1;
+    width: 232px;
+    height: 139px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 54.51%, #FFFFFF 94.55%);
+    filter: blur(4px);
+}
+
 .card img{
     transform: translate(0%, -28%);
     width: 227px;
@@ -261,21 +270,30 @@ body{
     width: 448px;
     height: 611.04px;
     position: relative;
-    z-index: 0;
+    z-index: 100;
 }
 
 .video-img{
     position: absolute;
-    z-index: 1;
+    z-index: 101;
     width: 448px;
     height: 611.04px;
     object-fit: cover;
-    /* background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 54.51%, #FFFFFF 94.55%); */
+}
+
+.img-video{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 54.51%, #FFFFFF 94.55%);
+    position: absolute;
+    z-index: 102;
+    width: 405px;
+    height: 300px;
+    filter: blur(4px);
+    transform: translate(1%, 109%);
 }
 
 .box-video{
     position: absolute;
-    z-index: 2;
+    z-index: 103;
     width: 237px;
     height: 236px;
     filter: blur(4%);
@@ -289,7 +307,7 @@ body{
     width: 88px;
     height: 88px;
     position: absolute;
-    z-index: 3;
+    z-index: 104;
     filter: none;
     transform: translate(-15%, 319%);
 }
@@ -696,4 +714,3 @@ body{
     height: 382px;
     object-fit: cover;
 }
-
