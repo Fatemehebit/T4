@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'IRANSans';
-    src: url('./Font/IRANSansXRegular.ttf');
+    src: url('./assets/Font/IRANSansXRegular.ttf');
 }
 
 @font-face {
     font-family: 'Estedad';
-    src: url('./Font/Estedad-V0.7A_p30download.com.ttf');
+    src: url('./assets/Font/Estedad-V0.7A_p30download.com.ttf');
 }
 
 @font-face {
     font-family: 'B Yekan';
-    src: url('./Font/B\ Yekan.ttf');
+    src: url('./assets/Font/B\ Yekan.ttf');
 }
 
 *{
@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-start;
 }
 
 body{
@@ -50,6 +50,7 @@ body{
 
 .header-list{
     margin-right: .5rem;
+    margin-bottom: -.5rem;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -62,6 +63,7 @@ body{
     font-weight: 700;
     color: rgba(42, 160, 239, 1);
     margin-right: 2rem;
+    
 }
 
 .header-list .border-courses{
@@ -173,6 +175,7 @@ body{
 
 .card:nth-child(2):hover{
     transform: scale(109.301%, 107.338%);
+    transition: 0.4s ease-in-out;
     /* width: 282px;
     height: 395px;
     margin: 0 2rem; */
@@ -428,7 +431,7 @@ body{
 
 .sessions a:active{
     color: #FFFFFF;
-    background-color: rgba(29, 155, 240, 1);
+    background-color: rgba(29, 155, 240, 1) !important;
 }
 
 .sessions a:hover{
@@ -580,12 +583,6 @@ body{
     border-radius: 16px;
 }
 
-.blue-circles{
-    position: absolute;
-    z-index: 0;
-    transform: translate(885%, -35%);
-}
-
 .about{
     max-width: 27%;
 }
@@ -694,5 +691,27 @@ body{
     width: 407px;
     height: 382px;
     object-fit: cover;
+}
+
+.circle-list{
+    width: 134px;
+    height: 142px;
+    position: absolute;
+    z-index: 0;
+    transform: translate(885%, -35%);
+}
+
+.circle-style{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: .68rem;
+}
+
+.circle-footer{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #1D9BF0;
 }
 
